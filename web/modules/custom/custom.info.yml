@@ -1,0 +1,4 @@
+name: Custom
+type: module
+description: 'Custom features.'
+core: 8.x

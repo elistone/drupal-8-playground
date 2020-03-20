@@ -1,0 +1,16 @@
+uuid: 9fc8ae13-19fa-4da1-9c4b-aaa35b071820
+langcode: en
+status: true
+dependencies: {  }
+id: node_1
+title: 'Node 1'
+route_name: entity.node.canonical
+route_parameters:
+  node: f8f4e4d4-cd10-46e0-b941-cb431f774428
+options: {  }
+expanded: false
+menu_name: main
+enabled: true
+parent: ''
+weight: 0
+description: 'test of menu config'

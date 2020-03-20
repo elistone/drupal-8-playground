@@ -26,7 +26,10 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/default_content": "^1.0@alpha",
         "drupal/kint": "^2.1",
+        "drupal/menu_link_config": "^1.0@alpha",
+        "drupal/simple_block": "^1.0@beta",
         "drupal/webform": "^5.9"
     },
     "conflict": {

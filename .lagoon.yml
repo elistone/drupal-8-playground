@@ -3,15 +3,9 @@ docker-compose-yaml: docker-compose.yml
 project: drupal-8-test
 
 tasks:
-#   pre-rollout:
-#     - run:
-#         name: drush sql-dump
-#         command: mkdir -p /app/web/sites/default/files/private/ && drush sql-dump --ordered-dump --gzip --result-file=/app/web/sites/default/files/private/pre-deploy-dump.sql.gz || true
-#         service: cli
-
   post-rollout:
     - run:
-        name: IF no Drupal installed and we are not master branch, sync from master brancy
+        name: IF no Drupal installed and we are not master branch, sync from master branch
         command: |
             if tables=$(drush sqlq 'show tables;') && [ -z "$tables" ] && [[ "$LAGOON_GIT_BRANCH" != "master" ]]; then
                 # no drupal installed, sync DB from master branch
@@ -19,10 +13,10 @@ tasks:
             fi
         service: cli
         shell: bash
-    - run:
-        name: drush cim
-        command: drush -y cim
-        service: cli
+    # - run:
+        # name: drush cim
+        # command: drush -y cim
+        # service: cli
     - run:
         name: drush updb
         command: drush -y updb

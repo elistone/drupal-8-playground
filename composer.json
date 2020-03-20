@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/config_auto_export": "1.0-beta3",
         "drupal/config_exclude": "1.x-dev",
         "drupal/config_ignore": "^2.1",
@@ -25,7 +26,8 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
-        "drupal/kint": "^2.1"
+        "drupal/kint": "^2.1",
+        "drupal/webform": "^5.9"
     },
     "conflict": {
         "drupal/drupal": "*"

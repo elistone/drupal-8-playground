@@ -43,3 +43,4 @@ docker-compose.override.yml
 # Ignore Drupal console
 /console/
 
+.DS_Store

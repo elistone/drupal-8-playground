@@ -1,0 +1,11 @@
+uuid: d0586b1e-48fd-48ef-9db1-f6238265c6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: block_for_export
+title: 'Blocks for Export'
+content:
+  value: "<p>This is a block for export with block content. Do you see it?</p>\r\n"
+  format: basic_html

@@ -8,14 +8,14 @@
 use Drupal\Component\Assertion\Handle;
 
 /**
- * Default development database.
+ * Default Silverback development database.
  */
-$databases['default']['default'] = [
-  'database' => dirname(__FILE__) . '/files/.sqlite',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
-];
+// $databases['default']['default'] = [
+//   'database' => dirname(__FILE__) . '/files/.sqlite',
+//   'prefix' => '',
+//   'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+//   'driver' => 'sqlite',
+// ];
 
 assert_options(ASSERT_ACTIVE, TRUE);
 Handle::register();
@@ -24,9 +24,9 @@ Handle::register();
  * Enable local development services.
  */
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
-if (getenv('SB_DEVELOPMENT_MODE') === 'theme') {
-  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/theme.services.yml';
-}
+// if (getenv('SB_DEVELOPMENT_MODE') === 'theme') {
+//   $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/theme.services.yml';
+// }
 
 /**
  * Show all error messages, with backtrace information.
@@ -48,13 +48,13 @@ $config['system.logging']['error_level'] = 'verbose';
  *
  * Only use this setting once the site has been installed.
  */
-if (getenv('SB_DEVELOPMENT_MODE') === 'theme') {
-  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
-  $settings['cache']['bins']['render'] = 'cache.backend.null';
-  $settings['cache']['bins']['page'] = 'cache.backend.null';
-  $config['system.performance']['css']['preprocess'] = FALSE;
-  $config['system.performance']['js']['preprocess'] = FALSE;
-}
+// if (getenv('SB_DEVELOPMENT_MODE') === 'theme') {
+//   $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+//   $settings['cache']['bins']['render'] = 'cache.backend.null';
+//   $settings['cache']['bins']['page'] = 'cache.backend.null';
+//   $config['system.performance']['css']['preprocess'] = FALSE;
+//   $config['system.performance']['js']['preprocess'] = FALSE;
+// }
 
 /**
  * Allow test modules and themes to be installed.

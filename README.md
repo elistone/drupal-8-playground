@@ -1,22 +1,31 @@
-# drupal-8-tests
+# Drupal 8 Playground
 
-Description:
+## Table of Contents
 
-Download and onboard the repo
+* [About](#about)
+* [Requirements](#requirements)
+* [Setup](#setup)
 
-https://github.com/stewest/drupal-8-tests
+## About
 
-* docker-compose up -d (dup)
-* docker-compose exec cli bash (lssh)
+This is a simple Drupal 8 project that includes a very basic database aimed at getting Drupal up and running as quick as possible to play around in.
 
-* cd/app 
-* composer install
-* cd web
 
-* drush sql-cli < ../testDB.sql
-* OR
-* drush cim
+## Requirements
 
-* drush uli
+This project has the following requirements:
 
-We'll be playing with config!
+* [Docker](https://www.docker.com/products/docker-app)
+* [Pygmy](https://pygmy.readthedocs.io/en/master/installation/)
+
+## Setup
+
+1. Clone this repo: `https://github.com/elistone/drupal-8-tests`
+1. Build & up the containers: `docker-compose up -d` (`dup`)
+1. Enter the container: `docker-compose exec cli bash` (`lssh`)
+1. Inside the container:
+    1. Composer install: `composer install`
+    1. Pull in the database: `drush sql < databases/testDB-umami.sql` or `drush sql < databases/testDB-standard.sql`
+    1. Get onetime login: `drush uli`
+
+Ready to play with!

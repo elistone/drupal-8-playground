@@ -25,7 +25,7 @@ This project has the following requirements:
 1. Enter the container: `docker-compose exec cli bash` (`lssh`)
 1. Inside the container:
     1. Composer install: `composer install`
-    1. Pull in the database: `drush sql < databases/testDB-umami.sql` or `drush sql < databases/testDB-standard.sql`
+    1. Pull in the database: `drush sql-cli < databases/testDB-standard.sql`
     1. Get onetime login: `drush uli`
 
 Ready to play with!

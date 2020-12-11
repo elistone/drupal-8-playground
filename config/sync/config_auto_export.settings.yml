@@ -1,7 +1,0 @@
-enabled: 1
-directory: 'temporary://cae'
-webhook: ''
-webhook_params: ''
-delay: '60'
-_core:
-  default_config_hash: JkIEfyfOF4mOG2Kuc3a4QztCvuQKokLXOYjzRUG8Ftg

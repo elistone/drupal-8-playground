@@ -1,5 +1,0 @@
-cron: 0
-daily: 1
-slack: ''
-email: 1
-email_to: development+algm@amazee.com

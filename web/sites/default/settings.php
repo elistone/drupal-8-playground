@@ -112,4 +112,5 @@ if (file_exists(__DIR__ . '/services.local.yml')) {
 }
 
 $config_directories['sync'] = '../config/sync';
+$settings["config_sync_directory"] = '../config/sync';
 $config['config_split.config_split.dev']['status'] = TRUE;

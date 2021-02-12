@@ -80,7 +80,7 @@ services:
 
 
   mariadb:
-    image: amazeeio/mariadb-drupal
+    image: amazeeio/mariadb-drupal:20.12.0
     labels:
       lagoon.type: mariadb
     ports:

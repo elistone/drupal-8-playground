@@ -21,7 +21,8 @@
         "drupal/core-composer-scaffold": "^8.9.13",
         "drupal/core-project-message": "^8.9.13",
         "drupal/core-recommended": "^8.9.13",
-        "drupal/devel": "^4.1"
+        "drupal/devel": "^4.1",
+        "drupal/unique_field_ajax": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -100,6 +101,7 @@
         ]
     },
     "require-dev": {
+        "drupal/core-dev": "^8.9.13",
         "drupal/upgrade_rector": "^1.0@alpha",
         "drupal/upgrade_status": "^3.4"
     }

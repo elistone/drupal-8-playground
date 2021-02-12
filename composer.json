@@ -18,9 +18,10 @@
         "composer/installers": "^1.2",
         "drupal/config_ignore": "^2.3",
         "drupal/config_notify": "^1.5",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1"
+        "drupal/core-composer-scaffold": "^8.9.13",
+        "drupal/core-project-message": "^8.9.13",
+        "drupal/core-recommended": "^8.9.13",
+        "drupal/devel": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -97,5 +98,9 @@
             "if [ -d web/modules/custom ]; then phpunit web/modules/custom; fi",
             "yarn install && CYPRESS_TAGS=@COMPLETED cypress run"
         ]
+    },
+    "require-dev": {
+        "drupal/upgrade_rector": "^1.0@alpha",
+        "drupal/upgrade_status": "^3.4"
     }
 }

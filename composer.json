@@ -22,7 +22,7 @@
         "drupal/core-project-message": "^8.9.13",
         "drupal/core-recommended": "^8.9.13",
         "drupal/devel": "^4.1",
-        "drupal/unique_field_ajax": "^1.2"
+        "drupal/unique_field_ajax": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"

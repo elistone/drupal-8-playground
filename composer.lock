@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2dfffcab9487d85a0b164608eabbec70",
+    "content-hash": "e676f2b5be9bea392d8fc31b0adc4b28",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1356,26 +1356,26 @@
         },
         {
             "name": "drupal/unique_field_ajax",
-            "version": "1.2.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/unique_field_ajax.git",
-                "reference": "8.x-1.2"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/unique_field_ajax-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "d1665193a8da5e0629a3b82f06a2155e8d139eda"
+                "url": "https://ftp.drupal.org/files/projects/unique_field_ajax-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "0da5415a947cb84a5c97b458fabe98b7828e3ee3"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1506429244",
+                    "version": "2.0.0",
+                    "datestamp": "1613140305",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1387,6 +1387,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Eli.Stone",
+                    "homepage": "https://www.drupal.org/user/3537348"
+                },
                 {
                     "name": "adel-by",
                     "homepage": "https://www.drupal.org/user/523686"

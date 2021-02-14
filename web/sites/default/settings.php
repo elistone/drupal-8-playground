@@ -59,15 +59,17 @@ if (getenv('AMAZEEIO_REDIS_HOST') && getenv('AMAZEEIO_REDIS_PORT')) {
 
 ### AMAZEE.IO Database connection
 if(getenv('AMAZEEIO_SITENAME')){
-  $databases['default']['default'] = array(
-    'driver' => 'mysql',
-    'database' => getenv('AMAZEEIO_SITENAME'),
-    'username' => getenv('AMAZEEIO_DB_USERNAME'),
-    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
-    'host' => getenv('AMAZEEIO_DB_HOST'),
-    'port' => getenv('AMAZEEIO_DB_PORT'),
-    'prefix' => '',
-  );
+  if ($_SERVER['HTTP_USER_AGENT'] !== 'Drupal command line') {
+    $databases['default']['default'] = array(
+      'driver' => 'mysql',
+      'database' => getenv('AMAZEEIO_SITENAME'),
+      'username' => getenv('AMAZEEIO_DB_USERNAME'),
+      'password' => getenv('AMAZEEIO_DB_PASSWORD'),
+      'host' => getenv('AMAZEEIO_DB_HOST'),
+      'port' => getenv('AMAZEEIO_DB_PORT'),
+      'prefix' => '',
+    );
+  }
 }
 
 ### Base URL

@@ -26,15 +26,17 @@
 
 // Lagoon Database connection.
 if (getenv('LAGOON')) {
-  $databases['default']['default'] = [
-    'driver' => 'mysql',
-    'database' => getenv('MARIADB_DATABASE') ?: 'drupal',
-    'username' => getenv('MARIADB_USERNAME') ?: 'drupal',
-    'password' => getenv('MARIADB_PASSWORD') ?: 'drupal',
-    'host' => getenv('MARIADB_HOST') ?: 'mariadb',
-    'port' => 3306,
-    'prefix' => '',
-  ];
+  if ($_SERVER['HTTP_USER_AGENT'] !== 'Drupal command line') {
+    $databases['default']['default'] = [
+      'driver' => 'mysql',
+      'database' => getenv('MARIADB_DATABASE') ?: 'drupal',
+      'username' => getenv('MARIADB_USERNAME') ?: 'drupal',
+      'password' => getenv('MARIADB_PASSWORD') ?: 'drupal',
+      'host' => getenv('MARIADB_HOST') ?: 'mariadb',
+      'port' => 3306,
+      'prefix' => '',
+    ];
+  }
 }
 
 // Lagoon Solr connection

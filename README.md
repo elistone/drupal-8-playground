@@ -64,8 +64,8 @@ The following steps should help with configuring PHPStorm to remotely connect to
       * Default configuration file: `/app/web/core/phpunit.xml`
 
 #### Setup docker - Image
-![Setup docker](./screenshots/1-docker-setup.png | width=400)
+![Setup docker](./screenshots/1-docker-setup.png)
 #### CLI interpreter - Image
-![CLI interpreter](./screenshots/2-cli-interpreter.png | width=400)
+![CLI interpreter](./screenshots/2-cli-interpreter.png)
 #### Remote Interpreter - Image
-![Remote Interpreter](./screenshots/3-remote-interpreter-setup.png | width=400)
+![Remote Interpreter](./screenshots/3-remote-interpreter-setup.png)
